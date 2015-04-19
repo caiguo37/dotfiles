@@ -1,3 +1,9 @@
-- clean: []
-- link: {}
+- clean: ['~']
+- link: 
+    ~/.gemrc: gemrc
+    ~/.vimrc: vimrc             
+    ~/.xvimrc: xvimrc            
+    ~/.zshrc: zshrc             
+    ~/.tmux.conf: tmux.conf         
+    ~/.bin: bin/
 - shell: []
