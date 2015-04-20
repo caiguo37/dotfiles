@@ -60,7 +60,6 @@ zstyle -e ':completion:*:approximate:*' max-errors \
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
-alias rm='rmtrash'
 alias ls='ls -GF'
 alias ll='ls -l'
 alias la='ls -a'
