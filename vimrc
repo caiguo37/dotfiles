@@ -6,6 +6,7 @@ filetype off
 call plug#begin('~/.vim/bundle')
 
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
@@ -20,6 +21,7 @@ Plug 'rizzatti/dash.vim'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'szw/vim-ctrlspace'
+Plug 'szw/vim-tags'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-leiningen'
 Plug 'tpope/vim-surround'
@@ -158,6 +160,7 @@ let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
 
 " NERDTree
 nnoremap <leader>a :Ag<space>
+nnoremap <leader>ag :Ag<space>
 nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
