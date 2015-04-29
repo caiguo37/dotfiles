@@ -139,7 +139,7 @@ vnoremap <leader>c :TComment<CR>
 nnoremap <leader>c :TComment<CR>
 inoremap <leader>c <esc>:TComment<CR>
 
-nnoremap <silent> <Esc><Esc> :noh<CR> :call clearmatches()<CR>
+nnoremap <silent> <Esc><Esc> :noh<CR>:call clearmatches()<CR>
 
 iabbrev @@ caiguo37@gmail.com
 
