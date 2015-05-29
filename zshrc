@@ -69,7 +69,7 @@ alias td='termdown'
 alias fuck='$(thefuck $(fc -ln -1))'
 alias createCtags='/usr/local/bin/ctags -R -f .tags'
 
-PROJECT_PATHS="$HOME/Documents/workspace/ali/discovery_git/O2O"
+PROJECT_PATHS="$HOME/Documents/workspace/ali/discovery/O2O"
 
 #路径别名 进入相应的路径时只要 cd ~xxx
 hash -d work="$HOME/Documents/workspace/"

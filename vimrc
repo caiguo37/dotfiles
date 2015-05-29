@@ -14,6 +14,7 @@ Plug 'daylerees/colour-schemes', { 'rtp': 'vim'}
 Plug 'godlygeek/tabular'
 Plug 'jpalardy/vim-slime'
 Plug 'kien/ctrlp.vim'
+Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'morhetz/gruvbox'
 Plug 'othree/xml.vim'
@@ -32,6 +33,7 @@ Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
 Plug 'jelera/vim-javascript-syntax', {'for': 'javascript'}
 Plug 'kchmck/vim-coffee-script', {'for': 'coffee'}
 Plug 'plasticboy/vim-markdown', {'for': 'mkd'}
+Plug 'rhysd/vim-crystal', {'for': 'crystal'}
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
 
@@ -138,6 +140,7 @@ inoremap <D-/> <esc>:TComment<CR>
 vnoremap <leader>c :TComment<CR>
 nnoremap <leader>c :TComment<CR>
 inoremap <leader>c <esc>:TComment<CR>
+nnoremap <leader>pj :%!python -m json.tool<CR>
 
 nnoremap <silent> <Esc><Esc> :noh<CR>:call clearmatches()<CR>
 
@@ -157,6 +160,8 @@ let g:airline_exclude_preview = 1
 
 let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
+
+let g:rainbow_active = 1
 
 " NERDTree
 nnoremap <leader>a :Ag<space>
