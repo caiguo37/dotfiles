@@ -17,6 +17,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'morhetz/gruvbox'
+Plug 'mxw/vim-jsx'
 Plug 'othree/xml.vim'
 Plug 'rizzatti/dash.vim'
 Plug 'rking/ag.vim'
@@ -30,12 +31,13 @@ Plug 'tpope/vim-surround'
 Plug 'derekwyatt/vim-scala', { 'for': 'scala'}
 Plug 'elzr/vim-json', { 'for': 'json'}
 Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
-Plug 'jelera/vim-javascript-syntax', {'for': 'javascript'}
+Plug 'pangloss/vim-javascript'
 Plug 'kchmck/vim-coffee-script', {'for': 'coffee'}
 Plug 'plasticboy/vim-markdown', {'for': 'mkd'}
 Plug 'rhysd/vim-crystal', {'for': 'crystal'}
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
+Plug 'slim-template/vim-slim'
 
 call plug#end()
 
@@ -43,6 +45,7 @@ call plug#end()
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible 
+set hidden
 
 " gui settings
 if (&t_Co == 256 || has('gui_running'))
@@ -155,8 +158,12 @@ let g:netrw_list_hide='^\.,.*\.class$,.*\.swp$,.*\.pyc$,.*\.swo$,\.DS_Store$'
 ""disable markdown folding configuration.
 let g:vim_markdown_folding_disabled=1
 
-let g:ctrlspace_default_mapping_key="<C-t>"
+" let g:ctrlspace_default_mapping_key="<leader>t"
+let g:CtrlSpaceFileEngine = "file_engine_darwin_amd64"
 let g:airline_exclude_preview = 1
+if executable("ag")
+    let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
+endif
 
 let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
@@ -166,6 +173,7 @@ let g:rainbow_active = 1
 " NERDTree
 nnoremap <leader>a :Ag<space>
 nnoremap <leader>ag :Ag<space>
+nnoremap <Leader>t :CtrlSpace<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
