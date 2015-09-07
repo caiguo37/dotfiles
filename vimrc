@@ -148,6 +148,7 @@ nnoremap <leader>pj :%!python -m json.tool<CR>
 nnoremap <silent> <Esc><Esc> :noh<CR>:call clearmatches()<CR>
 
 iabbrev @@ caiguo37@gmail.com
+iabbrev -- Auditors:庞煖
 
 "https://github.com/ggreer/the_silver_searcher
 let g:ackprg = 'ag --nogroup --nocolor --column'
@@ -158,8 +159,7 @@ let g:netrw_list_hide='^\.,.*\.class$,.*\.swp$,.*\.pyc$,.*\.swo$,\.DS_Store$'
 ""disable markdown folding configuration.
 let g:vim_markdown_folding_disabled=1
 
-" let g:ctrlspace_default_mapping_key="<leader>t"
-let g:CtrlSpaceFileEngine = "file_engine_darwin_amd64"
+let g:ctrlspace_default_mapping_key="<leader>t"
 let g:airline_exclude_preview = 1
 if executable("ag")
     let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'

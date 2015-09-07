@@ -4,7 +4,7 @@ ZSH_THEME="sunaku"
 
 #未启用github插件,会造成卡
 plugins=(
-brew bundler copydir cp emoji-clock gem git git-extras git-flow gitfast heroku lein osx pj pod python rake rbenv ruby tmux z
+brew bundler copydir cp emoji-clock gem git git-extras git-flow gitfast heroku lein osx pj pod python rake rbenv ruby tmux tmuxinator z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -76,13 +76,5 @@ hash -d work="$HOME/Documents/workspace/"
 hash -d simulator="$HOME/Library/Application Support/iPhone Simulator"
 hash -d mldoneky="$HOME/.mldonkey/incoming/files"
 
-#
-# Qu Jing iTerm & Terminal Setup Script
-# version 0.4
-# Felix Ding
-# Nov 18, 2014
-#
-function start_qujing {
-  export http_proxy='http://theironislands.f.getqujing.net:49072'
-  export HTTPS_PROXY='http://theironislands.f.getqujing.net:49072'
-}
+#修复tmuxinator 没正确显示names的问题
+export DISABLE_AUTO_TITLE=true
