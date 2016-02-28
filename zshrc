@@ -67,7 +67,10 @@ alias mm='mvim'
 alias vim='mvim -v'
 alias td='termdown'
 alias fuck='$(thefuck $(fc -ln -1))'
-alias createCtags='/usr/local/bin/ctags -R -f .tags'
+alias gpcsd='git push && cap staging deploy'
+alias cal='cal | grep --color -EC6 "\b$(date +%e | sed "s/ //g")"'
+alias enableProxy='export http_proxy=http://127.0.0.1:8016 https_proxy=http://127.0.0.1:8016'
+alias disableProxy='unset http_proxy https_proxy'
 
 PROJECT_PATHS="$HOME/Documents/workspace/ali/discovery/O2O"
 
