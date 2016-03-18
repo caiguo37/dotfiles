@@ -28,6 +28,7 @@ Plug 'szw/vim-ctrlspace'
 Plug 'szw/vim-tags'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-leiningen'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 
 Plug 'derekwyatt/vim-scala', { 'for': 'scala'}
@@ -106,6 +107,8 @@ set number
 set numberwidth=4
 
 set showtabline=0
+
+set relativenumber
 
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2

@@ -33,6 +33,8 @@ export GOOS=darwin
 export GOBIN=$GOROOT/bin
 export PATH=$GOBIN:$PATH
 
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
 SAVEHIST=1000
