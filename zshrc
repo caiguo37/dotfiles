@@ -33,6 +33,8 @@ export GOOS=darwin
 export GOBIN=$GOROOT/bin
 export PATH=$GOBIN:$PATH
 
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
 SAVEHIST=1000
@@ -68,7 +70,10 @@ alias vi='mvim -v'
 alias vim='mvim -v'
 alias td='termdown'
 alias fuck='$(thefuck $(fc -ln -1))'
-alias createCtags='/usr/local/bin/ctags -R -f .tags'
+alias gpcsd='git push && cap staging deploy'
+alias cal='cal | grep --color -EC6 "\b$(date +%e | sed "s/ //g")"'
+alias enableProxy='export http_proxy=http://127.0.0.1:8016 https_proxy=http://127.0.0.1:8016'
+alias disableProxy='unset http_proxy https_proxy'
 
 PROJECT_PATHS="$HOME/Documents/workspace/ali/discovery/O2O"
 

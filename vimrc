@@ -5,10 +5,11 @@ filetype off
 
 call plug#begin('~/.vim/bundle')
 
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'daylerees/colour-schemes', { 'rtp': 'vim'}
 Plug 'godlygeek/tabular'
@@ -22,22 +23,24 @@ Plug 'othree/xml.vim'
 Plug 'rizzatti/dash.vim'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree'
+Plug 'slim-template/vim-slim'
 Plug 'szw/vim-ctrlspace'
 Plug 'szw/vim-tags'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-leiningen'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 
 Plug 'derekwyatt/vim-scala', { 'for': 'scala'}
 Plug 'elzr/vim-json', { 'for': 'json'}
+Plug 'evanmiller/nginx-vim-syntax', { 'for': 'nginx'}
 Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
-Plug 'pangloss/vim-javascript'
 Plug 'kchmck/vim-coffee-script', {'for': 'coffee'}
+Plug 'pangloss/vim-javascript'
 Plug 'plasticboy/vim-markdown', {'for': 'mkd'}
 Plug 'rhysd/vim-crystal', {'for': 'crystal'}
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
-Plug 'slim-template/vim-slim'
 
 call plug#end()
 
@@ -104,6 +107,8 @@ set number
 set numberwidth=4
 
 set showtabline=0
+
+set relativenumber
 
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
