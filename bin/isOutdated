@@ -14,4 +14,4 @@ checkWithCommand "brew outdated"
 
 #RubyGems
 checkWithCommand "gem outdated"
-`gem cleanup`
+`yes n | gem cleanup`

@@ -23,15 +23,10 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X1
 
 export PATH="$PATH:$HOME/.bin"
 
+export PATH="$(brew --prefix sqlite)/bin:$PATH"
+
 export RBENVROOT=$(brew --prefix rbenv)
 export PATH=$RBENVROOT/bin:$RBENVROOT/shims:$PATH
-
-export GOROOT=$(brew --prefix go)
-export GOPATH=$HOME/Documents/workspace/Go
-export GOARCH=amd64
-export GOOS=darwin
-export GOBIN=$GOROOT/bin
-export PATH=$GOBIN:$PATH
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
@@ -70,8 +65,10 @@ alias vi='mvim -v'
 alias vim='mvim -v'
 alias td='termdown'
 alias fuck='$(thefuck $(fc -ln -1))'
-alias gpcsd='git push && cap staging deploy'
+alias gpmsd='git push && mina staging deploy'
 alias cal='cal | grep --color -EC6 "\b$(date +%e | sed "s/ //g")"'
+alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias enableProxy='export http_proxy=http://127.0.0.1:8016 https_proxy=http://127.0.0.1:8016'
 alias disableProxy='unset http_proxy https_proxy'
 

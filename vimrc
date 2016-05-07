@@ -114,6 +114,8 @@ autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
+let g:jsx_ext_required = 0
+
 """"""""""""""""""""""""""""""
 " => Status line
 """"""""""""""""""""""""""""""
@@ -153,7 +155,6 @@ nnoremap <leader>pj :%!python -m json.tool<CR>
 nnoremap <silent> <Esc><Esc> :noh<CR>:call clearmatches()<CR>
 
 iabbrev @@ caiguo37@gmail.com
-iabbrev -- Auditors:庞煖
 
 "https://github.com/ggreer/the_silver_searcher
 let g:ackprg = 'ag --nogroup --nocolor --column'
