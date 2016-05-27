@@ -14,7 +14,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'daylerees/colour-schemes', { 'rtp': 'vim'}
 Plug 'godlygeek/tabular'
 Plug 'jpalardy/vim-slime'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'morhetz/gruvbox'
@@ -109,6 +109,9 @@ set numberwidth=4
 set showtabline=0
 
 set relativenumber
+
+set foldmethod=indent
+set foldlevelstart=20
 
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
