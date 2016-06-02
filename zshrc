@@ -24,11 +24,13 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X1
 export PATH="$PATH:$HOME/.bin"
 
 export PATH="$(brew --prefix sqlite)/bin:$PATH"
+export PATH="$(brew --prefix llvm)/bin:$PATH"
 
 export RBENVROOT=$(brew --prefix rbenv)
 export PATH=$RBENVROOT/bin:$RBENVROOT/shims:$PATH
 
-export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
@@ -82,3 +84,5 @@ hash -d mldoneky="$HOME/.mldonkey/incoming/files"
 
 #修复tmuxinator 没正确显示names的问题
 export DISABLE_AUTO_TITLE=true
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
