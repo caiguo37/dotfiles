@@ -75,7 +75,7 @@ alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias enableProxy='export http_proxy=http://127.0.0.1:8016 https_proxy=http://127.0.0.1:8016'
 alias disableProxy='unset http_proxy https_proxy'
 
-PROJECT_PATHS="$HOME/Documents/workspace/ali/discovery/O2O"
+source "$HOME/.zsh_pj.rc"
 
 #路径别名 进入相应的路径时只要 cd ~xxx
 hash -d work="$HOME/Documents/workspace/"
