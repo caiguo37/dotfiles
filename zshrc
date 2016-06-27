@@ -4,7 +4,7 @@ ZSH_THEME="sunaku"
 
 #未启用github插件,会造成卡
 plugins=(
-brew bundler copydir cp emoji-clock gem git git-extras git-flow gitfast heroku lein osx pj pod python rake rbenv ruby tmux tmuxinator z
+brew bundler copydir cp emoji-clock gem git git-extras git-flow gitfast heroku lein osx pj pod postgres python rake rbenv tmux tmuxinator web-search xcode z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -67,11 +67,14 @@ alias vi='mvim -v'
 alias vim='mvim -v'
 alias td='termdown'
 alias fuck='$(thefuck $(fc -ln -1))'
+alias cal='cal | grep --color -EC6 "\b$(date +%e | sed "s/ //g")"'
+# Use Finder's Quick Look on a file (^C or space to close)
+alias ql='qlmanage -p 2>/dev/null'
+alias tnd='terminal-notifier -message "done"'
+
 alias msd='mina staging deploy'
 alias gpmsd='git push && mina staging deploy'
-alias cal='cal | grep --color -EC6 "\b$(date +%e | sed "s/ //g")"'
-alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+
 alias enableProxy='export http_proxy=http://127.0.0.1:8016 https_proxy=http://127.0.0.1:8016'
 alias disableProxy='unset http_proxy https_proxy'
 
@@ -79,10 +82,12 @@ source "$HOME/.zsh_pj.rc"
 
 #路径别名 进入相应的路径时只要 cd ~xxx
 hash -d work="$HOME/Documents/workspace/"
-hash -d simulator="$HOME/Library/Application Support/iPhone Simulator"
-hash -d mldoneky="$HOME/.mldonkey/incoming/files"
 
 #修复tmuxinator 没正确显示names的问题
 export DISABLE_AUTO_TITLE=true
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+if [ -f ~/.zsh_private_config ]; then
+    source ~/.zsh_private_config
+fi

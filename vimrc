@@ -8,13 +8,11 @@ call plug#begin('~/.vim/bundle')
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'daylerees/colour-schemes', { 'rtp': 'vim'}
 Plug 'godlygeek/tabular'
 Plug 'jpalardy/vim-slime'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'morhetz/gruvbox'
@@ -30,6 +28,9 @@ Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-leiningen'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-ruby/vim-ruby'
 
 Plug 'derekwyatt/vim-scala', { 'for': 'scala'}
 Plug 'elzr/vim-json', { 'for': 'json'}
