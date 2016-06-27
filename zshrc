@@ -86,3 +86,9 @@ hash -d mldoneky="$HOME/.mldonkey/incoming/files"
 export DISABLE_AUTO_TITLE=true
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+if [ -f ~/.zsh_private_config ]; then
+    source ~/.zsh_private_config
+else
+    print "404: ~/.zsh_private_config not found."
+fi
