@@ -4,7 +4,7 @@ ZSH_THEME="sunaku"
 
 #未启用github插件,会造成卡
 plugins=(
-brew bundler copydir cp emoji-clock gem git git-extras git-flow gitfast heroku lein osx pj pod python rake rbenv ruby tmux tmuxinator z
+brew bundler copydir cp emoji-clock gem git git-extras gitfast heroku lein osx pj pod python rake rbenv ruby tmux tmuxinator xcode z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -29,6 +29,7 @@ export PATH="$(brew --prefix llvm)/bin:$PATH"
 export RBENVROOT=$(brew --prefix rbenv)
 export PATH=$RBENVROOT/bin:$RBENVROOT/shims:$PATH
 
+export ANDROID_JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
