@@ -4,7 +4,7 @@ ZSH_THEME="sunaku"
 
 #未启用github插件,会造成卡
 plugins=(
-brew bundler copydir cp emoji-clock gem git git-extras git-flow gitfast heroku lein osx pj pod postgres python rake rbenv tmux tmuxinator web-search xcode z
+brew bundler copydir cp emoji-clock gem git git-extras git-flow gitfast heroku lein osx pj pod postgres python rake rbenv tmux tmuxinator vagrant web-search xcode z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -72,8 +72,7 @@ alias cal='cal | grep --color -EC6 "\b$(date +%e | sed "s/ //g")"'
 alias ql='qlmanage -p 2>/dev/null'
 alias tnd='terminal-notifier -message "done"'
 
-alias msd='mina staging deploy'
-alias gpmsd='git push && mina staging deploy'
+alias ctags="`brew --prefix`/bin/ctags"
 
 alias enableProxy='export http_proxy=http://127.0.0.1:8016 https_proxy=http://127.0.0.1:8016'
 alias disableProxy='unset http_proxy https_proxy'
