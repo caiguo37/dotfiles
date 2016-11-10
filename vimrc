@@ -190,6 +190,6 @@ nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <leader>p :CtrlP<CR>
 
-au BufRead,BufNewFile Podfile,Appfile,Deliverfile,Fastfile,Gymfile,Matchfile set filetype=ruby
+au BufRead,BufNewFile Podfile,Appfile,Deliverfile,Fastfile,Gymfile,Matchfile,Scanfile set filetype=ruby
 
 set autoread
