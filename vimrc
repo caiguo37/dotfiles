@@ -67,9 +67,7 @@ endif
 
 set guifont=Inconsolata:h16
 
-if $TMUX == ''
-    set clipboard+=unnamed
-endif
+set clipboard=unnamed
 
 set timeoutlen=300
 set noerrorbells
