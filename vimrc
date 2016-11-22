@@ -1,7 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vundle
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-filetype off 
+filetype off
 
 call plug#begin('~/.vim/bundle')
 
@@ -36,7 +36,6 @@ Plug 'derekwyatt/vim-scala', { 'for': 'scala'}
 Plug 'elzr/vim-json', { 'for': 'json'}
 Plug 'evanmiller/nginx-vim-syntax', { 'for': 'nginx'}
 Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
-Plug 'kchmck/vim-coffee-script', {'for': 'coffee'}
 Plug 'pangloss/vim-javascript'
 Plug 'plasticboy/vim-markdown', {'for': 'mkd'}
 Plug 'rhysd/vim-crystal', {'for': 'crystal'}
@@ -48,7 +47,7 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible 
+set nocompatible
 set hidden
 
 " gui settings
@@ -68,7 +67,7 @@ endif
 
 set guifont=Inconsolata:h16
 
-set clipboard=unnamed  
+set clipboard=unnamed
 
 set timeoutlen=300
 set noerrorbells
@@ -83,13 +82,13 @@ set noswapfile
 
 "set autochdir "自动设置目录为正在编辑的文件所在目录
 
-set autoindent 
-set smartindent  
+set autoindent
+set smartindent
 
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+" When searching try to be smart about cases
 set smartcase
 
 " Highlight search results
@@ -188,5 +187,7 @@ nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <leader>p :CtrlP<CR>
+
+au BufRead,BufNewFile Podfile,Appfile,Deliverfile,Fastfile,Gymfile,Matchfile,Scanfile set filetype=ruby
 
 set autoread
