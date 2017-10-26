@@ -5,7 +5,7 @@ filetype off
 
 call plug#begin('~/.vim/bundle')
 
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'chemzqm/wxapp.vim'
@@ -31,15 +31,14 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'vim-ruby/vim-ruby'
 
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby'}
 Plug 'derekwyatt/vim-scala', { 'for': 'scala'}
 Plug 'elzr/vim-json', { 'for': 'json'}
 Plug 'evanmiller/nginx-vim-syntax', { 'for': 'nginx'}
 Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
 Plug 'pangloss/vim-javascript'
 Plug 'plasticboy/vim-markdown', {'for': 'mkd'}
-Plug 'rhysd/vim-crystal', {'for': 'crystal'}
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
 
@@ -117,6 +116,7 @@ set foldlevelstart=20
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+autocmd Filetype html.javascript.css setlocal ts=2 sts=2 sw=2
 
 let g:jsx_ext_required = 0
 

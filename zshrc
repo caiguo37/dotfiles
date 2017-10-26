@@ -29,10 +29,6 @@ export PATH="$(brew --prefix llvm)/bin:$PATH"
 export RBENVROOT=$(brew --prefix rbenv)
 export PATH=$RBENVROOT/bin:$RBENVROOT/shims:$PATH
 
-export ANDROID_JAVA_HOME=$(/usr/libexec/java_home)
-export ANDROID_HOME=~/Library/Android/sdk
-export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
 SAVEHIST=1000
@@ -70,14 +66,13 @@ alias h='history'
 alias hag='history | ag'
 alias td='termdown'
 alias fuck='$(thefuck $(fc -ln -1))'
-alias cal='cal | grep --color -EC6 "\b$(date +%e | sed "s/ //g")"'
 # Use Finder's Quick Look on a file (^C or space to close)
 alias ql='qlmanage -p 2>/dev/null'
 alias tnd='terminal-notifier -message "done"'
 
 alias ctags="`brew --prefix`/bin/ctags"
 
-alias enableProxy='export http_proxy=http://127.0.0.1:8016 https_proxy=http://127.0.0.1:8016'
+alias enableProxy='export http_proxy=http://127.0.0.1:1235 https_proxy=http://127.0.0.1:1235'
 alias disableProxy='unset http_proxy https_proxy'
 
 source "$HOME/.zsh_pj.rc"
