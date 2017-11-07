@@ -35,7 +35,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby'}
 Plug 'derekwyatt/vim-scala', { 'for': 'scala'}
 Plug 'elzr/vim-json', { 'for': 'json'}
-Plug 'evanmiller/nginx-vim-syntax', { 'for': 'nginx'}
 Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
 Plug 'pangloss/vim-javascript'
 Plug 'plasticboy/vim-markdown', {'for': 'mkd'}
