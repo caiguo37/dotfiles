@@ -17,7 +17,9 @@ bindkey -M viins 'jj' vi-cmd-mode
 bindkey "^?" backward-delete-char
 bindkey "^[[3~" delete-char
 
-export EDITOR=vim
+# Use Neovim as "preferred editor"
+export EDITOR=nvim
+export VISUAL=nvim
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
@@ -60,8 +62,8 @@ alias ls='ls -GF'
 alias ll='ls -l'
 alias la='ls -a'
 alias mm='mvim'
-alias vi='mvim -v'
-alias vim='mvim -v'
+alias vi='nvim'
+alias vim='nvim'
 alias h='history'
 alias hag='history | ag'
 alias td='termdown'
