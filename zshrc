@@ -66,9 +66,8 @@ alias h='history'
 alias hag='history | ag'
 alias td='termdown'
 alias fuck='$(thefuck $(fc -ln -1))'
-# Use Finder's Quick Look on a file (^C or space to close)
-alias ql='qlmanage -p 2>/dev/null'
 alias tnd='terminal-notifier -message "done"'
+alias bf='bundle exec fastlane'
 
 alias ctags="`brew --prefix`/bin/ctags"
 
@@ -84,6 +83,12 @@ hash -d work="$HOME/Documents/workspace/"
 export DISABLE_AUTO_TITLE=true
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(rbenv init -)"
 
 if [ -f ~/.zsh_private_config ]; then
     source ~/.zsh_private_config

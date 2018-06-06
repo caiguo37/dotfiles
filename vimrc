@@ -32,12 +32,13 @@ Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'vim-ruby/vim-ruby', { 'for': 'ruby'}
-Plug 'derekwyatt/vim-scala', { 'for': 'scala'}
-Plug 'elzr/vim-json', { 'for': 'json'}
+Plug 'posva/vim-vue', { 'for': 'vue' }
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
+Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
 Plug 'pangloss/vim-javascript'
-Plug 'plasticboy/vim-markdown', {'for': 'mkd'}
+Plug 'plasticboy/vim-markdown', {'for': 'mkd' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
 
