@@ -154,6 +154,8 @@ vnoremap <leader>c :TComment<CR>
 nnoremap <leader>c :TComment<CR>
 inoremap <leader>c <esc>:TComment<CR>
 nnoremap <leader>pj :%!python -m json.tool<CR>
+vnoremap <leader>r :! ruby %<CR>
+nnoremap <leader>r :! ruby %<CR>
 
 nnoremap <silent> <Esc><Esc> :noh<CR>:call clearmatches()<CR>
 
