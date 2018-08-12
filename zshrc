@@ -4,7 +4,7 @@ ZSH_THEME="sunaku"
 
 #未启用github插件,会造成卡
 plugins=(
-brew bundler copydir cp emoji-clock gem git git-extras gitfast heroku lein osx pj pod postgres python rake rbenv tmux tmuxinator vagrant web-search xcode z
+brew bundler copydir cp emoji-clock gem git git-extras gitfast heroku lein osx pj pod postgres pyenv python rake rbenv tmux tmuxinator vagrant web-search xcode z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -89,7 +89,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-eval "$(rbenv init -)"
+eval "$(rbenv init - zsh)"
+eval "$(pyenv init - zsh)"
 
 if [ -f ~/.zsh_private_config ]; then
     source ~/.zsh_private_config
