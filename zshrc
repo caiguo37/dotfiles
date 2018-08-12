@@ -65,14 +65,13 @@ alias mm='mvim'
 alias vi='nvim'
 alias vim='nvim'
 alias h='history'
+alias o="open ."
 alias hag='history | ag'
 alias td='termdown'
 alias fuck='$(thefuck $(fc -ln -1))'
 alias tnd='terminal-notifier -message "done"'
 alias bf='bundle exec fastlane'
-
-alias ctags="`brew --prefix`/bin/ctags"
-
+alias server="http-server"
 alias enableProxy='export http_proxy=http://127.0.0.1:1235 https_proxy=http://127.0.0.1:1235'
 alias disableProxy='unset http_proxy https_proxy'
 
