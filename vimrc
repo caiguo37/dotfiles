@@ -190,6 +190,10 @@ nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <leader>p :CtrlP<CR>
 
+" 关闭ycm的preview
+set completeopt-=preview
+let g:ycm_add_preview_to_completeopt = 0
+
 au BufRead,BufNewFile Podfile,Appfile,Deliverfile,Fastfile,Gymfile,Matchfile,Scanfile set filetype=ruby
 
 set autoread

@@ -4,7 +4,7 @@ ZSH_THEME="sunaku"
 
 #未启用github插件,会造成卡
 plugins=(
-brew bundler copydir cp emoji-clock gem git git-extras gitfast heroku lein osx pj pod postgres pyenv python rake rbenv tmux tmuxinator vagrant web-search xcode z
+brew bundler copydir cp emoji-clock gem git git-extras gitfast heroku lein osx pj pod postgres pyenv python rake rbenv tmux tmuxinator vagrant web-search xcode z zsh-autosuggestions zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
