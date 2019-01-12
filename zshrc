@@ -16,6 +16,7 @@ bindkey -v
 bindkey -M viins 'jj' vi-cmd-mode
 bindkey "^?" backward-delete-char
 bindkey "^[[3~" delete-char
+bindkey '^l' autosuggest-accept
 
 # Use Neovim as "preferred editor"
 export EDITOR=nvim
@@ -82,6 +83,9 @@ hash -d work="$HOME/Documents/workspace/"
 
 #修复tmuxinator 没正确显示names的问题
 export DISABLE_AUTO_TITLE=true
+
+export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+export ZSH_AUTOSUGGEST_USE_ASYNC=true
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 

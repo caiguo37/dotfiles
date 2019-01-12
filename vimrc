@@ -40,7 +40,6 @@ Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
 Plug 'pangloss/vim-javascript'
 Plug 'plasticboy/vim-markdown', {'for': 'mkd' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-Plug 'wting/rust.vim', { 'for': 'rust' }
 
 call plug#end()
 
