@@ -14,9 +14,9 @@ source $ZSH/oh-my-zsh.sh
 
 bindkey -v
 bindkey -M viins 'jj' vi-cmd-mode
+bindkey -M viins 'll' forward-char
 bindkey "^?" backward-delete-char
 bindkey "^[[3~" delete-char
-bindkey '^l' autosuggest-accept
 
 # Use Neovim as "preferred editor"
 export EDITOR=nvim
