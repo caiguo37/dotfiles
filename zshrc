@@ -4,7 +4,7 @@ ZSH_THEME="sunaku"
 
 #未启用github插件,会造成卡
 plugins=(
-brew bundler copydir cp emoji-clock gem git git-extras gitfast heroku lein osx pj pod postgres pyenv python rake rbenv tmux tmuxinator vagrant web-search xcode z zsh-autosuggestions zsh-syntax-highlighting
+brew bundler copydir cp emoji-clock gem git git-extras gitfast heroku lein osx pj pod postgres pyenv python rake rbenv tmux tmuxinator vagrant web-search xcode z zsh-autosuggestions zsh-nvm zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -84,10 +84,6 @@ export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 export ZSH_AUTOSUGGEST_USE_ASYNC=true
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(rbenv init - zsh)"
 eval "$(pyenv init - zsh)"
