@@ -14,6 +14,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'daylerees/colour-schemes', { 'rtp': 'vim'}
 Plug 'godlygeek/tabular'
 Plug 'jpalardy/vim-slime'
+Plug 'leafgarland/typescript-vim'
 Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'morhetz/gruvbox'
@@ -193,6 +194,8 @@ nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <leader>p :CtrlP<CR>
+
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " 关闭ycm的preview
 set completeopt-=preview
