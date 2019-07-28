@@ -112,9 +112,14 @@ set foldmethod=indent
 set foldlevelstart=20
 
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
-autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+autocmd Filetype vue setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype html.javascript.css setlocal ts=2 sts=2 sw=2
+autocmd Filetype wxml setlocal ts=2 sts=2 sw=2
+autocmd Filetype wxss setlocal ts=2 sts=2 sw=2
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+
+au BufRead,BufNewFile Podfile,Appfile,Deliverfile,Fastfile,Gymfile,Matchfile,Scanfile set filetype=ruby
 
 let g:jsx_ext_required = 0
 
