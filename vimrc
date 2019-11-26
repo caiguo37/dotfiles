@@ -3,7 +3,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 filetype off
 
-call plug#begin('~/.vim/bundle')
+call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'Yggdroot/indentLine'
@@ -64,7 +64,7 @@ if has("gui_macvim")
     set shell=/bin/bash\ -l
 endif
 
-set guifont=Inconsolata:h16
+" set guifont=Inconsolata:h16
 
 set clipboard=unnamed
 
