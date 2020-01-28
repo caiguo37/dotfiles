@@ -67,20 +67,17 @@ alias o="open ."
 alias hrg='history | rg'
 alias td='termdown'
 alias fuck='$(thefuck $(fc -ln -1))'
-alias tnd='terminal-notifier -message "done"'
+alias tnd='terminal-notifier -title 🍺 -message done'
 alias bf='bundle exec fastlane'
 alias enableProxy='export http_proxy=http://127.0.0.1:1235 https_proxy=http://127.0.0.1:1235'
 alias disableProxy='unset http_proxy https_proxy'
 
 source "$HOME/.zsh_pj.rc"
 
-#路径别名 进入相应的路径时只要 cd ~xxx
-hash -d work="/Volumes/workspace/"
-
 #修复tmuxinator 没正确显示names的问题
 export DISABLE_AUTO_TITLE=true
 
-export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 export ZSH_AUTOSUGGEST_USE_ASYNC=true
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
