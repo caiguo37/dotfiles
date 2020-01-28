@@ -4,7 +4,7 @@ ZSH_THEME="sunaku"
 
 #未启用github插件,会造成卡
 plugins=(
-brew bundler copydir cp emoji-clock gem git git-extras gitfast heroku lein osx pj pod postgres pyenv python rake rbenv tmux tmuxinator vagrant web-search xcode z zsh-autosuggestions zsh-nvm zsh-syntax-highlighting
+brew bundler copydir cp emoji-clock gem git git-extras gitfast heroku lein osx pj pod postgres pyenv python rake rbenv tmux tmuxinator vagrant web-search xcode z zsh-autosuggestions zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -64,7 +64,7 @@ alias vi='nvim'
 alias vim='nvim'
 alias h='history'
 alias o="open ."
-alias hag='history | ag'
+alias hrg='history | rg'
 alias td='termdown'
 alias fuck='$(thefuck $(fc -ln -1))'
 alias tnd='terminal-notifier -message "done"'
