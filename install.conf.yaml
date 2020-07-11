@@ -2,6 +2,7 @@
 - link: 
     ~/.gemrc: gemrc
     ~/.vimrc: vimrc             
+    ~/.ideavimrc: ideavimrc             
     ~/.config/nvim/init.vim: nvimrc             
     ~/.xvimrc: xvimrc            
     ~/.zshrc: zshrc             
