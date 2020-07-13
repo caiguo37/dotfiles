@@ -71,6 +71,7 @@ alias tnd='terminal-notifier -title 🍺 -message done'
 alias bf='bundle exec fastlane'
 alias enableProxy='export http_proxy=http://127.0.0.1:1235 https_proxy=http://127.0.0.1:1235'
 alias disableProxy='unset http_proxy https_proxy'
+alias rmDerivedData='rm -rf /Users/caiguo/Library/Developer/Xcode/DerivedData'
 
 source "$HOME/.zsh_pj.rc"
 
