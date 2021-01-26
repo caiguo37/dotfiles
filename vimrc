@@ -5,7 +5,6 @@ filetype off
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'chemzqm/wxapp.vim'
@@ -68,6 +67,7 @@ endif
 
 set clipboard=unnamed
 
+set mmp=5000
 set timeoutlen=300
 set noerrorbells
 

@@ -1,0 +1,39 @@
+#!/usr/bin/env ruby
+
+require 'oxford_dictionary'
+require 'thor'
+require 'rest-client'
+
+class AnkiCommand < Thor
+  desc 'trans', '...'
+  def trans(word)
+    # https://github.com/soimort/translate-shell
+    transed = `trans -d #{word} -show-languages n -no-ansi`
+    front = transed.split("\n")[0, 2].join("\n")
+    back = `trans -brief #{word}`
+    post_note front, back
+  end
+
+  no_commands do
+    def post_note(front, back)
+      url = 'localhost:8765'
+      params = {
+        action: 'addNote',
+        version:  6,
+        params: {
+          note: {
+            deckName: 'glossary',
+            modelName: 'Basic',
+            fields: {
+              Front:  front,
+              Back: back
+            }
+          }
+        }
+      }
+      RestClient.post(url, params.to_json, content_type: :json)
+    end
+  end
+end
+
+AnkiCommand.start
