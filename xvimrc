@@ -1,2 +1,3 @@
 imap jj <esc>
 set timeoutlen=300
+xnoremap p pgvy

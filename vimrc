@@ -7,12 +7,10 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
-Plug 'chemzqm/wxapp.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'daylerees/colour-schemes', { 'rtp': 'vim'}
 Plug 'godlygeek/tabular'
-Plug 'jpalardy/vim-slime'
 Plug 'leafgarland/typescript-vim'
 Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
@@ -22,11 +20,9 @@ Plug 'othree/xml.vim'
 Plug 'rizzatti/dash.vim'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'slim-template/vim-slim'
 Plug 'szw/vim-ctrlspace'
 Plug 'szw/vim-tags'
 Plug 'tomtom/tcomment_vim'
-Plug 'tpope/vim-leiningen'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
@@ -194,6 +190,9 @@ nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <leader>p :CtrlP<CR>
+
+" allow multiple puts from the same yank rather than replacing the clipboard contents on put.
+xnoremap p pgvy
 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 

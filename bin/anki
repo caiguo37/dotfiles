@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'oxford_dictionary'
+require 'json'
 require 'thor'
 require 'rest-client'
 
@@ -12,6 +12,7 @@ class AnkiCommand < Thor
     front = transed.split("\n")[0, 2].join("\n")
     back = `trans -brief #{word}`
     post_note front, back
+    puts "#{front}\n#{back}"
   end
 
   no_commands do
