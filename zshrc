@@ -73,8 +73,6 @@ alias enableProxy='export http_proxy=http://127.0.0.1:1235 https_proxy=http://12
 alias disableProxy='unset http_proxy https_proxy'
 alias rmDerivedData='rm -rf /Users/caiguo/Library/Developer/Xcode/DerivedData'
 
-source "$HOME/.zsh_pj.rc"
-
 #修复tmuxinator 没正确显示names的问题
 export DISABLE_AUTO_TITLE=true
 
