@@ -4,7 +4,7 @@ ZSH_THEME="sunaku"
 
 #未启用github插件,会造成卡
 plugins=(
-brew bundler copydir cp emoji-clock gem git git-extras gitfast heroku lein osx pod postgres pyenv python rake rbenv tmux tmuxinator vagrant web-search xcode z zsh-autosuggestions zsh-syntax-highlighting
+brew bundler copydir cp emoji-clock gem git git-extras gitfast heroku lein osx pj pod postgres python rake rbenv tmux tmuxinator vagrant web-search xcode z zsh-autosuggestions zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -56,9 +56,9 @@ zstyle -e ':completion:*:approximate:*' max-errors \
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
-alias ls='ls -GF'
-alias ll='ls -l'
-alias la='ls -a'
+alias ls='exa -GF'
+alias ll='exa -l'
+alias la='exa -a'
 alias mm='mvim'
 alias vi='nvim'
 alias vim='nvim'
@@ -82,7 +82,6 @@ export ZSH_AUTOSUGGEST_USE_ASYNC=true
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 eval "$(rbenv init - zsh)"
-eval "$(pyenv init - zsh)"
 
 if [ -f ~/.zsh_private_config ]; then
     source ~/.zsh_private_config
